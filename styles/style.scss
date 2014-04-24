@@ -32,7 +32,7 @@ header{
     display: inline-block;
     border: 5/$font*1em solid $orange; // 5px
     padding: 10/$font*1em; // 10px
-    width: 57/$font*1em; // 57px
+    width: 1em;
     font-size: $font/$context*1em; // 45px
   }
   .name {
@@ -52,7 +52,7 @@ header{
     display: block;
     font-weight: normal;
     font-size: 40/$context*1em;
-    color: $orange;
+    color: #A6ABAB;
   }
 
 .smiley b {
