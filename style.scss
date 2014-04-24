@@ -1,0 +1,49 @@
+// Colors
+$orange: #E8A90C;
+$green: #3BAA87;
+
+// Mixins
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+}
+
+// Code
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background: url('cream_pixels.png') repeat;
+}
+header{
+  margin-top: 1%;
+  text-align: center;
+}
+  .squarelogo{
+    display: inline-block;
+    border: 4px solid $orange;
+    padding: 5px;
+    width: 34px;
+    font-size: 28px;
+  }
+  .name {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+    font-size: 24px;
+    &:hover{
+      color: $green;
+    }
+  }
+
+.smiley b {
+  @include transform(rotate(90deg));
+  font-family: "Trebuchet MS";
+  font-size: 14em;
+  letter-spacing: .05em;
+  position: absolute;
+  left: 50%;
+  margin-left: -68px;
+  top: 30%;
+}
