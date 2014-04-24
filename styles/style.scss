@@ -1,3 +1,5 @@
+@import "reset";
+
 // Colors
 $orange: #E8A90C;
 $green: #3BAA87;
@@ -21,8 +23,9 @@ body {
   font-size: 62.5%;
 }
 header{
-  margin-top: 1%;
+  padding: 5% 0;
   text-align: center;
+  background: #F4F4F4;
 }
   .squarelogo{
     $font: 45;
