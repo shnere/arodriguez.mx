@@ -3,7 +3,9 @@
 // Colors
 $orange: #E8A90C;
 $green: #3BAA87;
+
 $context: 10;
+$breakpoint: 711px;
 
 // Mixins
 @mixin transform($val) {
@@ -53,6 +55,29 @@ header{
     font-weight: normal;
     font-size: 40/$context*1em;
     color: #A6ABAB;
+  }
+
+#content {
+  font-size: 20/$context*1em;
+  margin: 5%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+  .icon {
+    color: inherit;
+    text-decoration: none;
+    margin: 1% 3%;
+    &:hover {
+      color: $orange;
+    }
+    span {
+      @media screen and (max-width: $breakpoint) {
+        display: none;
+      }
+    }
   }
 
 .smiley b {
